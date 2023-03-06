@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+.showcase{
+    position: absolute;
+    right:0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    z-index: 3;
+
+}   
+.showcase.active{
+
+    right: 300px;
+    transition: 0.4s;
+    background: #19222a;
+
+}
+.showcase header {
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    padding: 40px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+.logo{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+
+.toggle{
+
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background:  url('menu-button-of-three-horizontal-lines.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.showcase .active {
+    background: url(x-mark.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    position: absolute;
+    right: -80px;
+    top: 20px;
+}
+
+
+
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    background:#19222a;
+    transition: 9;
+    justify-content: center;
+    
+        
+}
+.menu ul li {
+    list-style: none;
+    margin-top: 100px;
+}
+
+.menu ul li a {
+    
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    
+    
+}
+
+
+.showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;   
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(120, 120, 207);
+    mix-blend-mode: overlay;
+}
+.text {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.text h2{
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+
+}
+.text h3{
+    font-size: 5em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.text p{
+    margin: 20px 0;
+    font-size: 1.1em;
+    max-width: 700px;
+    font-weight: 500;
+}
+.text a{
+    
+    font-size: 1em;
+    
+    font-weight: 800;
+    
+    color: black;padding: 5px;
+    
+}
+
+.anchorbutton{
+    background: #fff;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+
+}
+.anchorbutton:hover{
+    letter-spacing: 5px;
+    cursor: pointer;
+    width: 140px;
+    
+    transition: 0.4s;
+
+}
+.text a:hover{
+   
+
+}
+
+.social{
+    filter: invert(1);
+    list-style: none;
+    display: flex;
+    z-index: 3;
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+    justify-content: space-evenly;
+    
+    transition: 0.5s;
+}
+.social li a img {
+    
+    margin-right: 50px;
+}
+.social li a img:hover {
+    transform: scale(1.5)  translate(10px, 10px);
+    transition: 0.5s;
+    
+
+    
+}
+
+
+
+
+
+
+
+
+
+

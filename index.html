@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    
+    <title>Stars it is!</title>
+</head>
+<body>
+    <div class="container">
+    <section class="showcase active">
+        <header>
+            <h2 class="logo">Milkyway</h2>
+            <div class="toggle active"></div>
+                
+        </header>
+        <video src="stars.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Explore the world</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                 Deserunt culpa rerum suscipit? Cum incidunt consequatur sunt laudantium 
+                 reiciendis blanditiis mollitia.</p>
+
+            <div class="anchorbutton">  
+            <a class="#">Explore</a> 
+            </div>
+
+        </div>
+
+
+        <ul class="social">
+            <li><a href="#"><img src="social-media-54/png-32/facebook-32x32-761598.png" alt=""></a></li>
+            <li><a href="#"><img src="social-media-54/png-32/instagram-32x32-761608.png" alt=""></a></li>
+            <li><a href="#"><img src="social-media-54/png-32/twitter-32x32-761629.png" alt=""></a></li>
+        </ul>
+    </section>
+</div>
+
+    <div class="menu">
+       
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Destination</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Service</a></li>
+        </ul>
+        
+        
+
+    </div>
+    <script>
+        const togglemenu= document.querySelector('.toggle')
+
+        const toggleshpwcase= document.querySelector('.showcase')
+
+
+        togglemenu.addEventListener('click', () => {
+        togglemenu.classList.toggle('active')
+        toggleshpwcase.classList.toggle('active')
+                                })
+    </script>
+
+    
+</body>
+</html>
